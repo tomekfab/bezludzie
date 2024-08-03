@@ -28,7 +28,7 @@
     <script>
         async function fetchData() {
             try {
-                const response = await fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1v.../pub?output=csv');
+                const response = await fetch('https://docs.google.com/spreadsheets/d/17nzVj38yKCpDRVUAYTqBpUnOShxu6oYquWXPbYhQEQ0/pub?gid=0&single=true&output=csv');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
