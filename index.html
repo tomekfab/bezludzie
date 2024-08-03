@@ -41,8 +41,8 @@
                 const reservation = rows.find(row => row[0].trim() === code.trim());
 
                 if (reservation) {
-                    document.getElementById('checkin-code').innerText = `Check-in code: ${reservation[1].trim()}`;
-                    document.getElementById('checkout-code').innerText = `Check-out code: ${reservation[2].trim()}`;
+                    document.getElementById('checkin-code').innerText = `${reservation[1].trim()}`;
+                    document.getElementById('checkout-code').innerText = `${reservation[2].trim()}`;
                 } else {
                     document.getElementById('content').innerText = 'Invalid reservation code.';
                 }
@@ -61,7 +61,7 @@
 <body class="container mt-5">
     <div class="text-center">
         <h1 class="mb-4">Dom Wczasowy "Bezludzie"</h1>
-        <img src="https://via.placeholder.com/800x400" alt="Cabin Image" class="cabin-image mb-4">
+        <img src="domek.png" alt="Cabin Image" class="cabin-image mb-4">
     </div>
     <div id="spinner" class="text-center">
         <div class="spinner-border text-primary" role="status">
@@ -73,7 +73,7 @@
         <div class="info">
             <p><strong>🇵🇱</strong>
             <p><strong>Kod do zameldowania: <p id="checkin-code" class="lead"></p></strong> - Kod jest ważny w godzinach 15:00 - 22:00 (Jeśli przyjazd będzie później, proszę o kontakt przez wiadomość Airbnb)</p>
-            <p><strong>Kod do wymeldowania:<p id="checkout-code" class="lead"></p></strong> - Kod jest ważny w godzinach 6:00 - 11:00 (Jeśli chcą Państwa wyjechać wcześniej, proszę o kontakt przez wiadomość Airbnb)</p>
+            <p><strong>Kod do wymeldowania: <p id="checkout-code" class="lead"></p></strong> - Kod jest ważny w godzinach 6:00 - 11:00 (Jeśli chcą Państwa wyjechać wcześniej, proszę o kontakt przez wiadomość Airbnb)</p>
             <br>
             <p><strong>🇬🇧</strong>
             <p><strong>Check-in code: <p id="checkin-code" class="lead"></p></strong> - Check-in code is valid between 15:00 and 22:00 (If you arrive later, please contact me via Airbnb message)</p>
